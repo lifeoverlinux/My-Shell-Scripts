@@ -32,3 +32,4 @@ else
         echo
         echo "The process of ( Firefox Web Browser ) exist! It means firefox still working."
 fi
+
