@@ -1,7 +1,7 @@
 ## watchservice.sh
 
 #!/bin/bash
-#Author: Ibrahım Ucar
+#Author: Ibrahim Ucar
 #Mail: ucribrahim@gmail.com
 #Website: lifeoverlinux.com
 
