@@ -17,7 +17,6 @@
 
 email="username@domain.com"
 
-
 # Rest of shell script commands.
 
 pid=$(ps -e | pgrep firefox | wc -l | xargs echo -n)
@@ -27,8 +26,7 @@ echo "I'm checking the process of (Firefox Web Browser)... Please wait a second.
 if [ $pid -eq 0 ]; then
         echo
         echo "Firefox process doesn't exist. Sending e-mail to the user."
-        echo "Firefox process doesn't exist. This is a information that firefox service stopped." | ssmtp $email
-        echo "E-mail sent to this mail address:" $email
+        echo "Firefox process doesn't exist. This is a information that Firefox service stopped." | ssmtp $email
 
 else
         echo
