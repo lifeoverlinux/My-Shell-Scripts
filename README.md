@@ -6,4 +6,7 @@ If you see any error or something wrong about code, you can let me know the righ
 
 Your input is welcome! Please provide your feedback by creating issues on (https://github.com/lifeoverlinux/My-Shell-Scripts/issues) [Github]
 
+Mail : [ucribrahim@gmail.com](ucribrahim@gmail.com)
+
+
 Thanks.
