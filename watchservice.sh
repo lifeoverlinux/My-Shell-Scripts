@@ -9,6 +9,8 @@
 #-- This script watch a service process, if the process of service stops then script sends a email to the user -
 #-- that let the user know that a service (e.g firefox) stopped. This script just an example, you can watch any services.
 
+#-- You can set this script to CRON to make this script works every minute, second, hour, etc.
+
 
 # Mail information of users. As you defined the following mail address, you also need to configure ssmtp service.
 # Otherwise you'll not be able to send mail!
@@ -26,6 +28,7 @@ if [ $pid -eq 0 ]; then
         echo
         echo "Firefox process doesn't exist. Sending e-mail to the user."
         echo "Firefox process doesn't exist. This is a information that firefox service stopped." | ssmtp $email
+        echo "E-mail sent to this mail address:" $email
 
 else
         echo
