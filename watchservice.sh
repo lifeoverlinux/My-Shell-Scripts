@@ -10,7 +10,7 @@
 #-- that let the user know that a service (e.g firefox) stopped. This script just an example, you can watch any services.
 
 
-# Mail information of users. As you defined the following mail address, you also need to configure ssmtp service(google search).
+# Mail information of users. As you defined the following mail address, you also need to configure ssmtp service.
 # Otherwise you'll not be able to send mail!
 
 email="username@domain.com"
