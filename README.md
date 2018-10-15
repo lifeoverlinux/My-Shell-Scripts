@@ -4,9 +4,9 @@ I have started to learning bash shell scripting. I write the sample and basic sh
 
 If you see any error or something wrong about code, you can let me know the right code by sending email or github request.
 
-Your input is welcome! Please provide your feedback by creating issues on (https://github.com/lifeoverlinux/My-Shell-Scripts/issues) [Github]
+Your input is welcome! Please provide your feedback by creating issues on (
 
-Mail : [ucribrahim@gmail.com](ucribrahim@gmail.com)
+Twitter : [@ucribrahim](twitter.com/ucribrahim)
 
 
 Thanks.
