@@ -25,6 +25,8 @@ if [ $pid -eq 0 ]; then
         pid1=$(ps -e | pgrep firefox | wc -l | xargs echo -n)
         if [ $pid1 -ne 0 ]; then
         echo "Firefox has been started. I checked the process now, it's working."
+        else
+        echo "Firefox couldn't be started!"
         fi
 else
         echo
