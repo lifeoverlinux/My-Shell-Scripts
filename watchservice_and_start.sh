@@ -1,5 +1,6 @@
 #!/bin/bash
 # Author: Ibrahim Ucar
+# Written in: Debian
 # Mail: ucribrahim@gmail.com
 
 # This script watches a (e.g. Firefox) service if process of the service stops then script start the service and also script
