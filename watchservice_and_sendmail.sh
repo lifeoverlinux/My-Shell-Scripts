@@ -1,5 +1,6 @@
 #!/bin/bash
 # Author: Ibrahim Ucar
+# Written in: Debian
 # Mail: ucribrahim@gmail.com
 
 # This script watches a service process if the process of service stops then script sends an email to the user that
