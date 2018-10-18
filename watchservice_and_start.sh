@@ -15,7 +15,7 @@ pid=$(ps -e | pgrep firefox | wc -l | xargs echo -n)
 # Simple echo massage.
 echo "I'm checking the process of (Firefox Web Browser)... Please wait a second."
 
-# If conditions.
+# IF conditions.
 if [ $pid -eq 0 ]; then
         echo
         echo "Firefox process doesn't exist. It means Firefox is not working!"
