@@ -14,10 +14,20 @@
 
 hostname=$(hostname)
 date=$(date '+%Y-%m-%d %H:%M:%S')
-backup_files="/root/test"
-check_dest="/home/yedeklerim"
-dest="/home/yedeklerim/backups.tar.gz"
-email="ibrahim.ucar@coslat.com"
+# Write the path where your files include for backup.
+backup_files="/home/my_logs"
+# Write the path where backed up files will be stored.
+check_dest="/home/backups"
+dest="/home/backups/backups.tar.gz"
+email="username@domain.com"
+
+# Create the directory which we will use this directory as a backup place. If it's not exist, create.
+
+if [ ! -d $check_dest ]
+    then
+        mkdir $check_dest
+        echo "$check_dest has been created."
+    fi
 
 
 # Rest of the shell script commands.
