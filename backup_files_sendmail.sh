@@ -28,8 +28,8 @@ if [ ! -d $check_dest ]
     then
         mkdir $check_dest
         echo "$check_dest has been created."
+        echo
     fi
-
 
 # Rest of the shell script commands.
 
@@ -75,7 +75,7 @@ if [ -f $dest ]; then
         mpack -s "Backup Message From Server" -d /tmp/message_body.txt $dest $email 2> /tmp/mail_err.txt
 
         if [ -s "/tmp/mail_err.txt" ]; then
-        echo "Mail couldn't send!"
+        echo "Mail could not send!"
         echo "You can read the error from ( /var/log/mail.err ) file."
         else
         echo "Mail sent successfully."
