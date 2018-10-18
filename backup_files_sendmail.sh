@@ -19,6 +19,7 @@ backup_files="/home/my_logs"
 # Write the path where backed up files will be stored.
 check_dest="/home/backups"
 dest="/home/backups/backups.tar.gz"
+# Write e-mail address of the user.
 email="username@domain.com"
 
 # Create the directory which we will use this directory as a backup place. If it's not exist, create.
