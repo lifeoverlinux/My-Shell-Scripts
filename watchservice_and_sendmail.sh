@@ -23,7 +23,7 @@ pid=$(ps -e | pgrep firefox | wc -l | xargs echo -n)
 # Simple echo massage.
 echo "I'm checking the process of (Firefox Web Browser)... Please wait a second."
 
-# Here, I'm checking the variable that if process equal to "0" number or not equal. 
+# IF conditions.
 if [ $pid -eq 0 ]; then
         echo
         echo "Firefox process doesn't exist. I'm sending an e-mail to the user."
