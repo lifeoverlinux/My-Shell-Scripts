@@ -1,6 +1,7 @@
 #!/bin/bash
 # Author: Ibrahim Ucar
-# Written in: Debian
+# Written in: Debian 9.x
+# Date: 19.10.2018
 # Mail: ucribrahim@gmail.com
 
 
