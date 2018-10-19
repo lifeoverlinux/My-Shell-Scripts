@@ -5,13 +5,15 @@
 # Mail: ucribrahim@gmail.com
 
 
+# -------ABOUT THIS SCRIPT------- #
+
 # This script backup files of a directory and then send the (backup.tar.gz) file to the user with email.
 # This script just an example, you can configure as you wish.
 
 # You can set this script to CRON to make this script works every minute, hour, day, etc.
 
 
-# Requirements!
+# **** Requirements! ****
 
 # Install "Ssmtp" and configure it.
 # Install "Mpack" utility.
