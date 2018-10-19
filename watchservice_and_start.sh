@@ -4,6 +4,8 @@
 # Date: 19.10.2018
 # Mail: ucribrahim@gmail.com
 
+# -------ABOUT THIS SCRIPT------- #
+
 # This script watches a (e.g. Firefox) service if process of the service stops then script start the service and also script
 # make sure that service started. This script just an example, you can watch any services or configure as you wish.
 
