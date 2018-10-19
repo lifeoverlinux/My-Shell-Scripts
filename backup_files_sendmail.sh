@@ -30,7 +30,7 @@ if [ ! -d $check_dest ]
         mkdir $check_dest
         echo "$check_dest has been created."
         echo
-    fi
+fi
 
 # Rest of the shell script commands.
 
