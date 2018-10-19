@@ -1,6 +1,6 @@
 #!/bin/bash
 # Author: Ibrahim Ucar
-# Written in: Centos Server 7
+# Written in: Centos Server 7  ( Should work many GNU/Linux, FreeBSD systems)
 # Date: 25.10.2018
 # Mail: ucribrahim@gmail.com
 
