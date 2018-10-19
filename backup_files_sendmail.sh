@@ -11,6 +11,12 @@
 # You can set this script to CRON to make this script works every minute, hour, day, etc.
 
 
+# Requirements!
+
+# Install "Ssmtp" and configure it.
+# Install "Mpack" utility.
+
+
 # Variables of this shell script.
 
 hostname=$(hostname)
