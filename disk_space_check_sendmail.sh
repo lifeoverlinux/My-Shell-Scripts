@@ -29,8 +29,15 @@ diskname="/dev/sda1"
 # ***** Requirements! *****
 # Install "Ssmtp" and configure it.
 
+
 # Which mail that the warning message will be send when disk greater than 90%.
 email="username@domain.com"
+
+
+# I create a file which includes messages to send user. When my job finished about file then I delete the file.
+touch /tmp/email_diskusage.txt
+MAILFILE=/tmp/email_diskusage.txt
+
 
 # Rest of the shell script commands.
 
@@ -38,6 +45,15 @@ df -H | grep "$diskname" | awk '{ print $5}' > /tmp/diskuse.txt
 usage=$(cat /tmp/diskuse.txt | cut -f1 -d\%)
 
 if [ $usage -ge 90 ]; then
-        echo "WARNING! Your disk running out of space. The usage greater than 90%!"
-        echo "Running out of space. Disk using $usage% on $(hostname) as on $(date '+%b %d %Y %H:%M:%S'). Do not forget to check disk space on server before system crash."  | ssmtp $email
+        echo "WARNING! Your disk running out of space. The usage greater than 90%!. I sent an email to $email address."
+        echo "Subject:WARNING: Disk Capaticy 90%" > $MAILFILE
+        echo "To: $email" >> $MAILFILE
+        echo "From: $email" >> $MAILFILE
+
+        echo "" >> $MAILFILE
+        echo "Disk running out of space. Currently disk usage $usage% on $(hostname) as on $(date '+%Y/%m/%d at %H:%M:%S'). Do not forget to check disk space on server before system crash." >> $MAILFILE
+        echo "" >> $MAILFILE
+        echo "Have a nice day!" >> $MAILFILE
+        cat $MAILFILE | ssmtp $email
 fi
+rm $MAILFILE
