@@ -8,16 +8,16 @@ $hostname = exec(hostname);
 $date = exec("date '+%Y/%m/%d at %H:%M:%S'");
 
     require "Mail.php";
-    $to      = **"email_address"; // to email address**
-    $from    = **"email_address"; // the email address**
+    $to      = __"email_address"__; // to email address
+    $from    = "email_address"; // the email address
     $subject = "WARNING: Disk Capaticy 90%";
     $body    = "Disk running out of space. Currently disk usage ".$usage."% on ".$hostname." as on ".$date.". Do
 not forget to check disk space before system crash.";
 
     $host    = "smtp.gmail.com";
     $port    =  "587";
-    $user    = **"username";  // write yout mail address**
-    $pass    = **"password";  // write your mail password**
+    $user    = "username";  // write yout mail address
+    $pass    = "password";  // write your mail password
     $headers = array("From"=> $from, "To"=>$to, "Subject"=>$subject);
     $smtp    = @Mail::factory("smtp", array("host"=>$host, "port"=>$port, "auth"=> true, "username"=>$user,
 "password"=>$pass));
