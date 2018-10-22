@@ -1,6 +1,6 @@
-// Taken from Stackoverflow! I couldn't find the link address that I found php codes on it.
+// Taken from Stackoverflow! I couldn't find the same link address that I found php codes on it.
 
-// https://serverfault.com/questions/635139/how-to-fix-send-mail-authorization-failed-534-5-7-14
+// If you get error after run mailsender.php : https://serverfault.com/questions/635139/how-to-fix-send-mail-authorization-failed-534-5-7-14
 
 <?php
 $usage = exec("cat /tmp/diskuse.txt | cut -f1 -d\%");
@@ -8,7 +8,7 @@ $hostname = exec(hostname);
 $date = exec("date '+%Y/%m/%d at %H:%M:%S'");
 
     require "Mail.php";
-    $to      = __"email_address"__; // to email address
+    $to      = "email_address"; // to email address
     $from    = "email_address"; // the email address
     $subject = "WARNING: Disk Capaticy 90%";
     $body    = "Disk running out of space. Currently disk usage ".$usage."% on ".$hostname." as on ".$date.". Do
