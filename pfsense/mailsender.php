@@ -16,7 +16,7 @@ not forget to check disk space before system crash.";
 
     $host    = "smtp.gmail.com";
     $port    =  "587";
-    $user    = "username";  // write yout mail address
+    $user    = "username";  // write your mail address
     $pass    = "password";  // write your mail password
     $headers = array("From"=> $from, "To"=>$to, "Subject"=>$subject);
     $smtp    = @Mail::factory("smtp", array("host"=>$host, "port"=>$port, "auth"=> true, "username"=>$user,
