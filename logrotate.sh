@@ -1,11 +1,9 @@
 #!/bin/bash
 
-
 # This script backing up (tar.gz) two files in this scenerio. After backed up two files, script will clean the inside of
-# two files.
+# two files if succesfuly backed up.
 
-# FOR MY SCENERIO THIS SCRIPT SHOULD WORK EVERY END OF THE DAY AT 11:55 O'CLOCK.
-
+# You can set this script to CRON to make this script works every minute, hour, day, etc.
 
 
 # Get current date.
@@ -14,7 +12,9 @@ date=$(date "+%Y%m%d-%H:%M")
 # Where are the log files in? (directory)
 directory="/var/log/myxservice"
 
-# Log files name (e.g. for this scenerio two files)
+# Log files name (e.g. for this scenerio two files) IF you need to add more than two files, then create other codes - 
+# (copy/paste) for your new files.
+
 file1name=("mylog1.txt")
 file2name=("mylog2.txt")
 
