@@ -8,8 +8,6 @@
 
 
 
-# Variables of this shell script.
-
 # Get current date.
 date=$(date "+%Y%m%d-%H:%M")
 
@@ -20,10 +18,11 @@ directory="/var/log/myxservice"
 file1name=("mylog1.txt")
 file2name=("mylog2.txt")
 
-# The directory where the log files (tar.gz) are going to be in.
+# The directory where the log files (tar.gz) are going to be keep in.
 backup_directory="/var/log/myxservice/backups"
 
 # If backup directory doesn't exists, then create. If already created then go on.
+
 if [ ! -d $backup_directory ]; then
 	mkdir $backup_directory
         echo "----------------------------------------------"
@@ -64,7 +63,7 @@ if [[ $PWD/ = $directory/ ]]; then
         exit 3
 	fi
 	cat /dev/null > $file2name
-    echo "$file2name has been cleaned! Date: $date. You can find backed up files in $backup_directory"
+	echo "$file2name has been cleaned! Date: $date. You can find backed up files in $backup_directory"
         rm /tmp/error.log
 fi
 
