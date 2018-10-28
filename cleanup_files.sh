@@ -1,6 +1,6 @@
 #!/bin/bash
 # Author: Ibrahim Ucar
-# Written in: Debian 9
+# Written in: Centos 7
 # Date: 29.10.2018
 # Mail: ucribrahim@gmail.com
 
