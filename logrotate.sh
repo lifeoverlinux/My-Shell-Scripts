@@ -4,7 +4,7 @@
 # Date: 25.10.2018
 # Mail: ucribrahim@gmail.com
 
-# This script backing up (tar.gz) two files in this scenerio. After backed up two files, script will clean the inside of
+# This script backup (tar.gz) two files in this scenerio. After backed up two files, script will clean the inside of
 # two files if succesfuly backed up.
 
 # You can set this script to CRON to make this script works every minute, hour, day, etc.
