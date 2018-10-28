@@ -29,7 +29,7 @@ backup_directory="/var/log/myxservice/backups"
 
 if [ ! -d $backup_directory ]; then
 	mkdir $backup_directory
-        echo "----------------------------------------------"
+	echo "----------------------------------------------"
 	echo "$backup_directory has been created!"
 	echo "----------------------------------------------"
 fi
@@ -46,11 +46,11 @@ if [[ $PWD/ = $directory/ ]]; then
         if [ $? -ne 0 ]
         then
 	echo "An error occurred while making a backup, see /tmp/error.log file."
-        exit 3
+	exit 3
 	fi
 	cat /dev/null > $file1name
-        echo "$file1name has been cleaned! Date: $date. You can find backed up files in $backup_directory"
-        rm /tmp/error.log
+	echo "$file1name has been cleaned! Date: $date. You can find backed up files in $backup_directory"
+	rm /tmp/error.log
 fi
 
 # Log rotate process(2). There is "if" and "for" condititons for N files in the variables above.
@@ -62,13 +62,13 @@ if [[ $PWD/ = $directory/ ]]; then
         [ ! -f $file2name ] && { echo "Opps! The file $file2name could not found! Check $directory directory!"; exit 1; }
         tar cvfz ${backup_directory}/${file2name}.${date}.tar.gz $file2name 2> /tmp/error.log
         if [ $? -ne 0 ]
-        then
+	then
 	echo "An error occurred while making a backup, see /tmp/error.log file".
-        exit 3
+	exit 3
 	fi
 	cat /dev/null > $file2name
 	echo "$file2name has been cleaned! Date: $date. You can find backed up files in $backup_directory"
-        rm /tmp/error.log
+	rm /tmp/error.log
 fi
 
 exit 0
