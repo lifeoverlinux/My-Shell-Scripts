@@ -1,4 +1,8 @@
 #!/bin/bash
+# Author: Ibrahim Ucar
+# Written in: Debian 9
+# Date: 29.10.2018
+# Mail: ucribrahim@gmail.com
 
 # This shell script automatically clean up files that you defined down into the variables. It's basic clean up script.
 # You can set this script to CRON to make this script works every minute, hour, day, etc.
