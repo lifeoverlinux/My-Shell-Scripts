@@ -35,7 +35,7 @@ if [ ! -d $backup_directory ]; then
 fi
 
 
-# Log rotate process(1). There is "if" and "for" condititons for N files in the variables above.
+# Log rotate process(1). There is "if" condititons for X files in the variables above.
 
 cd $directory
 PWD=$(pwd)
@@ -53,7 +53,7 @@ if [[ $PWD/ = $directory/ ]]; then
 	rm /tmp/error.log
 fi
 
-# Log rotate process(2). There is "if" and "for" condititons for N files in the variables above.
+# Log rotate process(2). There is "if" and "for" condititons for X files in the variables above.
 
 cd $directory
 PWD=$(pwd)
