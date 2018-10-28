@@ -1,4 +1,8 @@
 #!/bin/bash
+# Author: Ibrahim Ucar
+# Written in: Centos 7
+# Date: 25.10.2018
+# Mail: ucribrahim@gmail.com
 
 # This script backing up (tar.gz) two files in this scenerio. After backed up two files, script will clean the inside of
 # two files if succesfuly backed up.
