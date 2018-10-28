@@ -41,10 +41,10 @@ cd $directory
 PWD=$(pwd)
 
 if [[ $PWD/ = $directory/ ]]; then
-        [ ! -f $file1name ] && { echo "Opps! The file $file1name could not found! Check $directory directory!"; exit 1; }
-        tar cvfz ${backup_directory}/${file1name}.${date}.tar.gz $file1name 2> /tmp/error.log
-        if [ $? -ne 0 ]
-        then
+	[ ! -f $file1name ] && { echo "Opps! The file $file1name could not found! Check $directory directory!"; exit 1; }
+	tar cvfz ${backup_directory}/${file1name}.${date}.tar.gz $file1name 2> /tmp/error.log
+	if [ $? -ne 0 ]
+	then
 	echo "An error occurred while making a backup, see /tmp/error.log file."
 	exit 3
 	fi
@@ -59,9 +59,9 @@ cd $directory
 PWD=$(pwd)
 
 if [[ $PWD/ = $directory/ ]]; then
-        [ ! -f $file2name ] && { echo "Opps! The file $file2name could not found! Check $directory directory!"; exit 1; }
-        tar cvfz ${backup_directory}/${file2name}.${date}.tar.gz $file2name 2> /tmp/error.log
-        if [ $? -ne 0 ]
+	[ ! -f $file2name ] && { echo "Opps! The file $file2name could not found! Check $directory directory!"; exit 1; }
+	tar cvfz ${backup_directory}/${file2name}.${date}.tar.gz $file2name 2> /tmp/error.log
+	if [ $? -ne 0 ]
 	then
 	echo "An error occurred while making a backup, see /tmp/error.log file".
 	exit 3
