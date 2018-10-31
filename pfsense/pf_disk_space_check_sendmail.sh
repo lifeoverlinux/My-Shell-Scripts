@@ -37,5 +37,5 @@ usage=$(cat /tmp/diskuse.txt | cut -f1 -d\%)
 
 if [ $usage -ge 90 ]; then
         echo "WARNING! Your disk running out of space. The usage greater than 90%!. I sent an email to user."
-  	php -f /root/mailsender.php
+        php -f /root/mailsender.php
 fi
