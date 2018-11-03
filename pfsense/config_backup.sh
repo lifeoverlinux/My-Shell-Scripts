@@ -1,4 +1,12 @@
 #!/bin/sh
+# Author: Ibrahim Ucar
+# Written in: pfSense 2.4.4
+# Date: 01.11.2018
+# Mail: ucribrahim@gmail.com
+
+
+# This script backup the "config.xml" file and archive it with .gz format via tar command.
+# You can set this script to CRON to make this script works every minute, hour, day, etc.
 
 # Get current date.
 date=$(date "+%Y%m%d-%H:%M")
@@ -38,9 +46,9 @@ if [ $PWD/ = $directory/ ]; then
         fi
 fi
 
-
-# The files which older than 5 days will be deleted. 
-# The following value can be changed, it depends on how often you run this script for backup.
+# --------------------------IMPORTANT--------------------------------#
+# The files that older than 5 days will be deleted. 
+# The following value (+5) can be changed, it depends on how often you will run this script for backup.
 
 find $backup_directory -type f -name "*.tar.gz" -mtime +5 -exec rm {} \;
 
