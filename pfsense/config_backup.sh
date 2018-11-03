@@ -4,8 +4,8 @@
 # Date: 01.11.2018
 # Mail: ucribrahim@gmail.com
 
-
 # This script backup the "config.xml" file and archive it with .gz format via tar command.
+
 # You can set this script to CRON to make this script works every minute, hour, day, etc.
 
 # Get current date.
