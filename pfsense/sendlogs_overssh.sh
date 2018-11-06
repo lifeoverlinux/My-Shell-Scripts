@@ -16,7 +16,7 @@ DATE=`date "+%Y%m%d"`
 # You will have to use the following two commands only once. No need to use them second time! Just copy&paste commands.
 
 # ssh-keygen -f /root/.ssh/id_rsa -t rsa -N ""
-# ssh-copy-id -i /root/.ssh/id_rsa.pub root@192.168.1.100    # change ip address!
+# ssh-copy-id -i /root/.ssh/id_rsa.pub root@192.168.1.100    # change client ip address!
 
 
 
