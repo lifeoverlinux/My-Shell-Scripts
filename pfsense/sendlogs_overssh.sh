@@ -20,7 +20,7 @@ DATE=`date "+%Y%m%d"`
 
 
 
-# ----- After you used all above commands then you can run the script. -----
+# After you used all above commands then you can run the script.
 
 
 # Another script in my system backup some files into the /root/logs directory with today's date via tar command and this script will send today's files to the client.
